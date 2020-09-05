@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1= title
+  form.login-form
+    .form-group
+      label(for='email') Email
+      input.form-control(type='email' id='email' name='email')
+    .form-group
+      label(for='password') Passsword
+      input.form-control(type='password' id='password' name='password')  
+    button.btn.btn-primary(type='submit') Login
